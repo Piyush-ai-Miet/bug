@@ -9,8 +9,10 @@ Track and document bugs discovered during beta testing of the login page at:
 
 ## 📋 Documentation
 
-- **[LOGIN_PAGE_BUGS.md](LOGIN_PAGE_BUGS.md)** - Comprehensive bug testing guide with detailed descriptions of common login page issues
+- **[TESTING_WORKFLOW.md](TESTING_WORKFLOW.md)** - Step-by-step testing workflow guide (START HERE!)
 - **[QUICK_CHECKLIST.md](QUICK_CHECKLIST.md)** - Quick reference checklist for systematic testing
+- **[LOGIN_PAGE_BUGS.md](LOGIN_PAGE_BUGS.md)** - Comprehensive bug testing guide with detailed descriptions of common login page issues
+- **[BUG_REPORT_TEMPLATE.md](BUG_REPORT_TEMPLATE.md)** - Template for documenting bugs found
 
 ## 🔍 What to Test
 
