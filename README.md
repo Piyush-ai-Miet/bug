@@ -4,7 +4,10 @@ This repository contains bug reports and issues identified during the beta testi
 
 ## Contents
 
-- [BUG_REPORT.md](./BUG_REPORT.md) - Comprehensive documentation of all bugs found during beta testing
+- 📋 [TESTING_SUMMARY.md](./TESTING_SUMMARY.md) - Executive summary of beta testing findings and recommendations
+- 🐛 [BUG_REPORT.md](./BUG_REPORT.md) - Comprehensive documentation of all bugs found during beta testing
+- ✅ [TEST_CHECKLIST.md](./TEST_CHECKLIST.md) - Systematic testing checklist for QA validation
+- 📝 [BUG_TEMPLATE.md](./BUG_TEMPLATE.md) - Template for reporting new bugs
 
 ## Bug Summary
 
