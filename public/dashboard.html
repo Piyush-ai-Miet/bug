@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Vulnerable Demo App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .user-info {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .session-info {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .session-info strong {
+            color: #856404;
+        }
+        button {
+            padding: 12px 24px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #c82333;
+        }
+        .vulnerability-note {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="user-info">
+            <h3>Welcome!</h3>
+            <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+        </div>
+        <div class="session-info">
+            <strong>🔓 Session ID (Post-Login):</strong>
+            <p id="sessionId" style="word-break: break-all; margin-top: 5px;">Loading...</p>
+            <p style="margin-top: 10px; font-size: 12px;">
+                <strong>BUG 4:</strong> Compare this session ID with the pre-login session ID. 
+                If they are the same, the application is vulnerable to session fixation!
+            </p>
+        </div>
+        <button onclick="logout()">Logout</button>
+        
+        <div class="vulnerability-note">
+            <strong>⚠️ Demonstration Purpose Only</strong>
+            <p style="margin-top: 10px;">This application intentionally contains security vulnerabilities for educational purposes.</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadUserInfo() {
+            try {
+                const response = await fetch('/api/user');
+                const data = await response.json();
+                
+                if (data.success) {
+                    document.getElementById('userEmail').textContent = data.user.email;
+                    document.getElementById('sessionId').textContent = data.user.sessionId;
+                } else {
+                    window.location.href = '/login';
+                }
+            } catch (error) {
+                window.location.href = '/login';
+            }
+        }
+
+        async function logout() {
+            try {
+                const response = await fetch('/api/logout', {
+                    method: 'POST'
+                });
+                const data = await response.json();
+                if (data.success) {
+                    window.location.href = '/login';
+                }
+            } catch (error) {
+                window.location.href = '/login';
+            }
+        }
+
+        loadUserInfo();
+    </script>
+</body>
+</html>
