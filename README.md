@@ -13,17 +13,16 @@ A **SQL Injection vulnerability** has been identified in the login form that all
 - Database data exfiltration
 - Potential data destruction
 
-## Documentation
+## 📚 Documentation
 
-For the complete vulnerability report, including:
-- Detailed vulnerability description
-- Proof of Concept (PoC)
-- Exploitation scenarios
-- Step-by-step reproduction
-- Remediation recommendations
-- CVSS scoring and impact analysis
+**→ New Here? Start with [NAVIGATION.md](./NAVIGATION.md)** for a complete guide to all documents.
 
-**See: [SECURITY_VULNERABILITY_REPORT.md](./SECURITY_VULNERABILITY_REPORT.md)**
+### Main Documents:
+
+1. **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** - Fast access guide with payloads and demo script (5 min read)
+2. **[SECURITY_VULNERABILITY_REPORT.md](./SECURITY_VULNERABILITY_REPORT.md)** - Complete detailed report (15-20 min read)
+3. **[ADDITIONAL_VULNERABILITIES.md](./ADDITIONAL_VULNERABILITIES.md)** - 12 more vulnerability types (30-40 min read)
+4. **[NAVIGATION.md](./NAVIGATION.md)** - Repository navigation and action plan
 
 ## Quick Summary
 
