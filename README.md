@@ -2,6 +2,8 @@
 
 This repository documents bugs found during beta testing of the **code-edit-lac.vercel.app** application, specifically focusing on the login page functionality.
 
+> 📖 **New to this repository?** Read [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) for a complete overview!
+
 ## 🎯 Purpose
 
 Track and document bugs discovered during beta testing of the login page at:
@@ -9,9 +11,10 @@ Track and document bugs discovered during beta testing of the login page at:
 
 ## 📋 Documentation
 
-- **[TESTING_WORKFLOW.md](TESTING_WORKFLOW.md)** - Step-by-step testing workflow guide (START HERE!)
+- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - 📖 Complete overview of this repository (READ THIS FIRST!)
+- **[TESTING_WORKFLOW.md](TESTING_WORKFLOW.md)** - Step-by-step testing workflow guide (START TESTING HERE!)
 - **[QUICK_CHECKLIST.md](QUICK_CHECKLIST.md)** - Quick reference checklist for systematic testing
-- **[LOGIN_PAGE_BUGS.md](LOGIN_PAGE_BUGS.md)** - Comprehensive bug testing guide with detailed descriptions of common login page issues
+- **[LOGIN_PAGE_BUGS.md](LOGIN_PAGE_BUGS.md)** - Comprehensive bug testing guide with detailed descriptions
 - **[BUG_REPORT_TEMPLATE.md](BUG_REPORT_TEMPLATE.md)** - Template for documenting bugs found
 
 ## 🔍 What to Test
