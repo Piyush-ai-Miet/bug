@@ -13,6 +13,7 @@ This repository provides complete documentation for identifying, testing, and re
 
 | Document | Purpose | Who Should Read | Time Required |
 |----------|---------|-----------------|---------------|
+| **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** | 🌟 Top 10 critical bugs quick test | Testers (START HERE) | 15 min |
 | **[BUG_REPORT_SUMMARY.md](BUG_REPORT_SUMMARY.md)** | Executive summary and overview | Everyone | 5 min |
 | **[TESTING_GUIDE.md](TESTING_GUIDE.md)** | Step-by-step testing instructions | Testers | 80 min (for testing) |
 | **[LOGIN_PAGE_BUG_ANALYSIS.md](LOGIN_PAGE_BUG_ANALYSIS.md)** | Detailed bug catalog and analysis | Developers, Security | 15 min |
@@ -21,7 +22,13 @@ This repository provides complete documentation for identifying, testing, and re
 
 ## 🚀 Quick Start
 
-### For Testers (Finding Bugs)
+### ⚡ Fast Track (15 minutes)
+**For testers who need to find bugs quickly:**
+1. **Read:** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
+2. **Test:** Top 10 critical bugs
+3. **Report:** Use the quick bug template
+
+### 📋 For Testers (Finding Bugs)
 1. **Read:** [TESTING_GUIDE.md](TESTING_GUIDE.md)
 2. **Test:** Follow the 8 testing phases
 3. **Report:** Use the bug report template provided
